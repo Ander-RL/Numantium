@@ -15,12 +15,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Test.h">
+    <ClInclude Include="src\Numantium\Core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Numantium\Application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Numantium.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Numantium\EntryPoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Test.cpp">
+    <ClCompile Include="src\Numantium\Application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
