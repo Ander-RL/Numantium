@@ -1,0 +1,3 @@
+[submodule "Numantium/vendor/spdlog"]
+	path = Numantium/vendor/spdlog
+	url = https://github.com/gabime/spdlog
