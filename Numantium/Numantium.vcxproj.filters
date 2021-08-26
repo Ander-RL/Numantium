@@ -6,7 +6,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Numantium.h" />
     <ClInclude Include="src\Numantium\Application.h">
       <Filter>Numantium</Filter>
     </ClInclude>
@@ -19,6 +18,11 @@
     <ClInclude Include="src\Numantium\Log.h">
       <Filter>Numantium</Filter>
     </ClInclude>
+    <ClInclude Include="src\Numantium.h" />
+    <ClInclude Include="src\Numantium\Events\Event.h" />
+    <ClInclude Include="src\Numantium\Events\KeyEvent.h" />
+    <ClInclude Include="src\Numantium\Events\MouseMovedEvent.h" />
+    <ClInclude Include="src\Numantium\Events\ApplicationEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Numantium\Application.cpp">
