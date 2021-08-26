@@ -1,9 +1,9 @@
 #include "Application.h"
 #include <iostream>
 
-#include "Events/Event.h"
-#include "Events/ApplicationEvent.h"
-#include "Log.h"
+#include "Numantium/Events/Event.h"
+#include "Numantium/Events/ApplicationEvent.h"
+#include "Numantium/Log.h"
 
 namespace Numantium {
 

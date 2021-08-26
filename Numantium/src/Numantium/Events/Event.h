@@ -3,7 +3,7 @@
 #include <functional>
 #include <sstream>
 
-#include "../Core.h"
+#include "Numantium/Core.h"
 
 namespace Numantium
 {

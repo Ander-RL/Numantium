@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Core.h"
-#include "Events/Event.h"
+#include "Numantium/Events/Event.h"
 
 namespace Numantium {
 

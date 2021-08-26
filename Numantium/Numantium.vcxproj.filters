@@ -4,8 +4,12 @@
     <Filter Include="Numantium">
       <UniqueIdentifier>{8378F51A-EFE2-A991-3821-5B37A4CA87E6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Numantium\Events">
+      <UniqueIdentifier>{07134422-F30B-6374-1C3E-48F908964280}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Numantium.h" />
     <ClInclude Include="src\Numantium\Application.h">
       <Filter>Numantium</Filter>
     </ClInclude>
@@ -15,14 +19,21 @@
     <ClInclude Include="src\Numantium\EntryPoint.h">
       <Filter>Numantium</Filter>
     </ClInclude>
+    <ClInclude Include="src\Numantium\Events\ApplicationEvent.h">
+      <Filter>Numantium\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Numantium\Events\Event.h">
+      <Filter>Numantium\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Numantium\Events\KeyEvent.h">
+      <Filter>Numantium\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Numantium\Events\MouseMovedEvent.h">
+      <Filter>Numantium\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Numantium\Log.h">
       <Filter>Numantium</Filter>
     </ClInclude>
-    <ClInclude Include="src\Numantium.h" />
-    <ClInclude Include="src\Numantium\Events\Event.h" />
-    <ClInclude Include="src\Numantium\Events\KeyEvent.h" />
-    <ClInclude Include="src\Numantium\Events\MouseMovedEvent.h" />
-    <ClInclude Include="src\Numantium\Events\ApplicationEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Numantium\Application.cpp">
