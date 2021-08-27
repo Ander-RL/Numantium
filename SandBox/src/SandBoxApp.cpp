@@ -1,4 +1,5 @@
 #include <Numantium.h>
+#include <Numantium/EntryPoint.h>
 
 class Sandbox : public Numantium::Application
 {

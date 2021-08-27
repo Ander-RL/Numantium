@@ -6,5 +6,5 @@
 #include "Numantium/Log.h"
 
 // --------- Entry Point ---------
-#include "Numantium/EntryPoint.h" 
+//#include "Numantium/EntryPoint.h" // Not linking any more
 // -------------------------------

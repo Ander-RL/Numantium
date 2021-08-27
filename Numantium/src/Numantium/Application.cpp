@@ -1,14 +1,13 @@
-#include "Application.h"
-#include <iostream>
+#include "nmpch.h"
+#include "Numantium.h"
 
-#include "Numantium/Events/Event.h"
 #include "Numantium/Events/ApplicationEvent.h"
-#include "Numantium/Log.h"
 
 namespace Numantium {
 
 	Application::Application()
 	{
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
 
 	Application::~Application()
@@ -17,11 +16,9 @@ namespace Numantium {
 
 	void Application::Run()
 	{
-		WindowResizeEvent e(1280, 720);
-		NM_TRACE(e);
-
-		while (true) 
+		while (m_Running) 
 		{
+			m_Window->OnUpdate();
 		}
 	}
 }

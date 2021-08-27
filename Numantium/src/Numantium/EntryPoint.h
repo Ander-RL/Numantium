@@ -9,8 +9,6 @@ int main(int argc, char** argv)
 {
 	Numantium::Log::Init();
 	NM_CORE_WARN("Initialized Log!");
-	const char* s = "Prueba!!";
-	NM_INFO("Client Log! {0}", s);
 
 	auto app = Numantium::CreateApplication();
 	app->Run();

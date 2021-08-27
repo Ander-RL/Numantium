@@ -1,3 +1,4 @@
+#include "nmpch.h"
 #include "Log.h"
 
 namespace Numantium 

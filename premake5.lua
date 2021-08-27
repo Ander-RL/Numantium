@@ -10,6 +10,14 @@ workspace "Numantium"
 --              debug            windows        x64
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories realtive to root foler (solution directory)
+-- List of directories (struct/table)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Numantium/vendor/GLFW/include"
+
+-- Includes premake5.lua (GLFW project) file that is present in that folder (similar to #include)
+include "Numantium/vendor/GLFW" 
+
 project "Numantium"
     location "Numantium"
     kind "SharedLib" -- Dinamic librarys DLL
@@ -17,6 +25,11 @@ project "Numantium"
 
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
+    pchheader "nmpch.h"
+    -- for visual studio, because it needs to create a pch file 
+    -- this info is inserted in the projects properties
+    pchsource "Numantium/src/nmpch.cpp"
 
     files
     {
@@ -27,7 +40,14 @@ project "Numantium"
     includedirs
     {
         "%{prj.name}/src",
-        "%{prj.name}/vendor/spdlog/include"
+        "%{prj.name}/vendor/spdlog/include",
+        "%{IncludeDir.GLFW}" -- = Numantium/vendor/GLFW/include
+    }
+
+    links
+    {
+        "GLFW", --links the GLFW project and dependencies to Numantium. Now Numantium depends on GLFW.
+        "opengl32.lib" -- static library?
     }
 
     -- Anything below this filter applys only to windows (until it reaches another filter)
