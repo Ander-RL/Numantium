@@ -156,7 +156,7 @@
     <ClInclude Include="src\Numantium\Events\ApplicationEvent.h" />
     <ClInclude Include="src\Numantium\Events\Event.h" />
     <ClInclude Include="src\Numantium\Events\KeyEvent.h" />
-    <ClInclude Include="src\Numantium\Events\MouseMovedEvent.h" />
+    <ClInclude Include="src\Numantium\Events\MouseEvent.h" />
     <ClInclude Include="src\Numantium\Log.h" />
     <ClInclude Include="src\Numantium\Window.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />

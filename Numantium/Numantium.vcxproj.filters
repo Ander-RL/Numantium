@@ -34,7 +34,7 @@
     <ClInclude Include="src\Numantium\Events\KeyEvent.h">
       <Filter>Numantium\Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\Numantium\Events\MouseMovedEvent.h">
+    <ClInclude Include="src\Numantium\Events\MouseEvent.h">
       <Filter>Numantium\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Numantium\Log.h">

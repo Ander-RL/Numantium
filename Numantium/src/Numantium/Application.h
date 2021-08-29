@@ -2,6 +2,7 @@
 
 #include "Core.h"
 #include "Numantium/Events/Event.h"
+#include "Numantium/Events/ApplicationEvent.h"
 #include "Numantium/Window.h"
 
 namespace Numantium {
@@ -14,7 +15,11 @@ namespace Numantium {
 
 		void Run();
 
+		void OnEvent(Event& e);
+
 	private:
+		bool OnWindowClose(WindowCloseEvent& e);
+
 		std::unique_ptr<Window> m_Window;
 		bool m_Running = true;
 	};

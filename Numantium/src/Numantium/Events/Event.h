@@ -26,6 +26,8 @@ namespace Numantium
 		EventCategoryMouseButton = BIT(4)
 	};
 
+	//static EventType GetStaticType();
+
 	class Event
 	{
 	public:
@@ -46,6 +48,9 @@ namespace Numantium
 
 	class EventDispatcher
 	{
+		template<typename T>
+		using EventFn = std::function<bool(T&)>;
+
 	public:
 		EventDispatcher(Event& event)
 			: m_Event(event)
@@ -63,6 +68,7 @@ namespace Numantium
 			}
 			return false;
 		}
+
 	private:
 		Event& m_Event;
 	};
